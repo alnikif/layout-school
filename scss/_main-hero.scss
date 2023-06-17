@@ -1,0 +1,50 @@
+.main-hero{
+    background-image: url('/images/banner-bg.jpg');
+    background-color: $backgroundLight;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+.page-header{
+    background-color: $backgroundShadow;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.page-logo{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $colorDark;
+    font-weight: bold;
+    font-size: 2rem;
+    span{
+        color: $colorLight;
+    }
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li{
+        border-right: 0.0625rem solid $borderColor;
+        &:last-child{
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            color: $colorLight;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: block;
+            padding: 1.5rem 0.5rem;
+            transition: 0.5s all;
+            &:hover{
+                background-color: $colorLight;
+                color: $colorDark;
+            }
+
+        }
+    }
+}

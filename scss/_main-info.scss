@@ -1,0 +1,27 @@
+.main-info{
+    @include container($backgroundLight);
+    padding-block: 5rem;
+}
+.main-info-title-text{
+    font-size: 0.8rem;
+    color: $colorDark;
+}
+.main-info-title{
+    @include title;
+    @include border-bottom;
+}
+.main-info-wrapper{
+    @include grid(2);
+    align-items: center;
+}
+.main-info-text{
+    font-size: 0.8rem;
+    color: $colorText;
+    text-align: justify;
+}
+.main-info-large-text{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $colorDark;
+}

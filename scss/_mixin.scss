@@ -1,0 +1,51 @@
+@mixin hover-light{
+    &:hover{
+        background-color: $colorLight;
+        color: $colorDark;
+    }
+}
+@mixin grid($columns){
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat($columns, 1fr);
+}
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+@mixin title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+}
+@mixin border-bottom{
+    &::after{
+        content: "";
+        display: block;
+        border-bottom: 0.125rem solid $colorDark;
+        width: 6rem;
+        padding-top: 1rem;
+
+    }
+}
+@mixin btn{
+    padding: 0.6rem 1.8rem;
+    font-size: 0.8rem;
+    max-width: 9rem;
+    text-align: center;
+    border: 0.0625rem solid $colorDark;
+    &:hover{
+        background-color: $backgroundLight;
+        border: 0.0625rem solid $colorDark;
+        color: $colorDark;
+    }
+}
+@mixin container($bg){
+    background-color: $bg;
+    padding-block: 3rem;
+}

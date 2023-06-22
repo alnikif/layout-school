@@ -1,0 +1,31 @@
+.main-footer{
+    @include container($colorDark);
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+.page-footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-footer-nav-list{
+    padding-right: 6rem;
+    line-height: 1.5rem;
+    a{
+        text-decoration: none;
+        color: $colorLight;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: 0.2s all;
+        &:hover{
+            color: $colorText;
+        }
+    }
+}
+.page-footer-copyright{
+    color: lightgray;
+    opacity: 0.4;
+}

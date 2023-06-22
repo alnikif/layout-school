@@ -1,0 +1,40 @@
+.main-articles{
+   @include container($backgroundLight);
+    .main-articles-title{
+        @include title;
+        @include border-bottom;
+    }
+    .main-articles-text{
+        font-size: 0.8rem;
+        color: $colorDark;
+    }
+}
+.main-articles-wrapper{
+    @include grid(3);
+}
+.main-articles-article{
+    @include flex;
+    justify-content: flex-start;
+    .main-articles-article-title{
+        text-transform: uppercase;
+    }
+    .main-articles-srticle-text{
+        color: $colorText;
+    }
+}
+.main-articles-box{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 13rem;
+    width: 100%;
+}
+.main-articles-btn{
+    @include btn;
+}
+
+@for $i from 1 through 3{
+    .box-#{$i}{
+        background-image: url("/images/photo-#{$i}.jpg");
+    }
+}

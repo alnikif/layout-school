@@ -1,0 +1,42 @@
+.main-gallery{
+    @include container($backgroundDark);
+}
+.main-gallery-text{
+    font-size: 0.8rem;
+    color: $colorDark;
+}
+.main-gallery-title{
+    @include title;
+    @include border-bottom;
+}
+.main-gallery-wrapper{
+    @include grid(4);
+   
+}
+.avatar{
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+}
+.main-gallery-box{
+  @include flex;
+}
+@for $i from 1 through 4{
+    .avatar-#{$i}{
+        background-image: url('/images/avatar#{$i}.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.main-gallery-avatar-title{
+    text-transform: uppercase;
+    color: $colorDark;
+}
+.main-gallery-avatar-text{
+    color: $colorText;
+    font-size: 0.8rem;
+    text-align: center; 
+}
+.main-gallery-btn{
+    @include btn;
+}

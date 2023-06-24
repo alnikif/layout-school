@@ -1,8 +1,50 @@
 @media(max-width: $ipadScreen){
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
     .menu{
         display: none;
     }
     .page-nav .b-g-menu{
         display: block;
+    }
+    .main-articles-wrapper{
+        @include grid(2);
+        
+    }
+    .main-gallery-wrapper{
+        @include grid(2);
+       
+    }
+}
+@media(max-width: $mobileScreen){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .menu{
+        display: none;
+    }
+    .page-nav .b-g-menu{
+        display: block;
+    }
+    .main-articles-wrapper{
+        display: block
+        
+    }
+    .main-gallery-wrapper{
+        display: block;
+       
+    }
+    .main-info-wrapper{
+        display: block;
+        .main-info-large-text{
+            padding-top: 1.5rem;
+        }
     }
 }

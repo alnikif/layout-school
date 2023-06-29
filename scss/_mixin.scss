@@ -49,3 +49,33 @@
     background-color: $bg;
     padding-block: 3rem;
 }
+@mixin mobileMenu{
+    li{
+        border-bottom: 0.0625rem solid $borderColor;
+        border-right: none;
+    }
+    a{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+@mixin mobileBtn{
+    max-width: unset;
+    width: 100%;
+    padding-block: 0.8rem;
+}
+@mixin mediaMenu{
+    display: none;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 1rem);
+    width: 100%;
+    text-align: center;
+    background-color: $backgroundShadow;
+}
+@mixin mediaBgMenu{
+    display: block;
+    position: absolute;
+    right: 0.8rem;
+    top: -1.5rem;
+}

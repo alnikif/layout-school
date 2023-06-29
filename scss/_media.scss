@@ -1,50 +1,101 @@
 @media(max-width: $ipadScreen){
+    .main-banner{
+        .main-banner-title{
+            padding-top: 4.5rem;
+            font-size: 5rem;
+        }
+    }
     h1{
         font-size: 2.5rem;
     }
     h2{
         font-size: 2rem;
     }
+    .b-g-menu{
+        @include mediaBgMenu;
+    }
     .menu{
-        display: none;
+        @include mediaMenu;
     }
     .page-nav .b-g-menu{
         display: block;
     }
     .main-articles-wrapper{
-        @include grid(2);
-        
+        @include grid(1);
+        .main-articles-article{
+            padding-bottom: 2rem;
+        }
     }
     .main-gallery-wrapper{
         @include grid(2);
-       
+        .main-gallery-box{
+            padding-bottom: 2rem;
+        }
     }
+    @include mobileMenu;
 }
 @media(max-width: $mobileScreen){
+    .main-banner{
+        .main-banner-title{
+            padding-top: 4.5rem;
+        }
+        .main-banner-buttons{
+            flex-direction: column;
+            align-items: center;
+            .main-banner-btn{
+                width: 100%;
+            }
+        }
+    }
     h1{
         font-size: 2rem;
     }
     h2{
         font-size: 1.5rem;
     }
-    .menu{
-        display: none;
+    .b-g-menu{
+       @include mediaBgMenu;
     }
-    .page-nav .b-g-menu{
-        display: block;
+    .menu{
+        @include mediaMenu;
     }
     .main-articles-wrapper{
-        display: block
-        
+        display: block;
+        .main-articles-article{
+            padding-bottom: 2rem;
+        }
+    }
+    .main-articles-btn{
+       @include mobileBtn;
     }
     .main-gallery-wrapper{
         display: block;
-       
+        .main-gallery-box{
+            padding-bottom: 2rem;
+        }
+    }
+    .main-gallery-btn{
+       @include mobileBtn;
     }
     .main-info-wrapper{
         display: block;
         .main-info-large-text{
             padding-top: 1.5rem;
+        }
+    }
+    .mobileMenu{
+       @include mobileMenu;
+    }
+    .main-footer{
+        .container{
+            display: block;
+            .page-footer-nav{
+                display: block;
+            }
+            li{
+                padding-block: 0.5rem;
+                border: none;
+            }
         }
     }
 }

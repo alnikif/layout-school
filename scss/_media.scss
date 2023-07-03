@@ -1,4 +1,7 @@
 @media(max-width: $ipadScreen){
+    .page-header{
+        padding-block: 0.6rem;
+    }
     .main-banner{
         .main-banner-title{
             padding-top: 4.5rem;
@@ -36,6 +39,9 @@
     
 }
 @media(max-width: $mobileScreen){
+    .page-header{
+        padding-block: 0.6rem;
+    }
     .main-banner{
         .main-banner-title{
             padding-top: 4.5rem;
